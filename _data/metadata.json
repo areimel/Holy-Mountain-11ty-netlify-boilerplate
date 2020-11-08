@@ -1,5 +1,15 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "description": "A template for building a simple blog website with the Eleventy static site generator, Netlify CMS, and with deployment to Netlify.",
-  "url": "https://eleventy-netlify-boilerplate.netlify.app"
+  "title": "Holy Mountain Frontend Framework",
+  "url": "https://myurl.com/",
+  "description": "Lightweight frontend framework created with Devs in mind.",
+  "feed": {
+    "subtitle": "",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://myurl.com/"
+  },
+  "author": {
+    "name": "Alec Reimel",
+    "email": "alecreimel1@gmail.com"
+  }
 }

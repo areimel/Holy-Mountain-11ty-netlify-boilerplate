@@ -48,11 +48,14 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
+  /*
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
+  */
 
   // Minify JS
+  /*
   eleventyConfig.addFilter("jsmin", function(code) {
     let minified = UglifyJS.minify(code);
     if (minified.error) {
@@ -61,8 +64,10 @@ module.exports = function(eleventyConfig) {
     }
     return minified.code;
   });
+  */
 
   // Minify HTML output
+  /*
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
@@ -74,12 +79,16 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+  */
+
+
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+ 
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -98,7 +107,7 @@ module.exports = function(eleventyConfig) {
   );
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
+    templateFormats: ["md", "njk", "html", "liquid","css","jpg","jpeg","webp","png"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.

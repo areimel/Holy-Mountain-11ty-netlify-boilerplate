@@ -11,6 +11,8 @@ NOTES
 ********************************************/
 
 
+
+
 /********************************************
 
 LOADING SCREEN
@@ -387,7 +389,11 @@ TEMPLATE_5 - ACCORDIAN ELEMENTS
 $(document).ready(function(){
 	
 	$(".--hm_template_5 .cell>.label").click(function(){
-		//console.log('click');
+		$(this).hm_accordion();
+	});
+
+	$.fn.hm_accordion = function(){
+
 		if ($(this).parents(".cell").hasClass("active")) {
 			//Close all
 				$(".--hm_template_5 .cell").removeClass("active");
@@ -402,6 +408,7 @@ $(document).ready(function(){
 				$(".--hm_template_5 .cell.active>.copy").show();
 				//console.log('open');
 		}
-	});
+
+	};
 
 });

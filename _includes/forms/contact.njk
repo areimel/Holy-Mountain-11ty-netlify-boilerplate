@@ -1,52 +1,45 @@
-<form class="--hm_form_1" id="contact_form" action="<?=strtok($_SERVER['REQUEST_URI'], '?')?>?success_signup=1" method="post" autocomplete="on">
+<form class="--hm_form_1" id="contact_form" action="<?=strtok($_SERVER['REQUEST_URI'], '?')?>?success_signup=1" method="post" autocomplete="on" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 
-	
+	<!-- META -->
 	<input type="hidden" name="data[form]" value="Contact Form" />
-	<input type="hidden" name="data[address]" value="" />
-	<input type="hidden" name="data[pagetime]" value="<?=strtotime(date('Y-m-d H:i:s'));?>" />
-
-	<div id="contact_form_recaptcha" class="g-recaptcha"
-	   data-sitekey="6LdOzMEUAAAAACws1FRDJwH7EPIGLWvz4zIZh3yk"
-	   data-callback="onSubmit_contact"
-	   data-size="invisible">
-	</div>
+	<p class="hidden">
+	    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+	  </p>
 
 	<!-- FIRST NAME -->
 	<label class="input_wrapper fancy_label half">
-		
 		<input type="text" name="data[f_name]" placeholder="" required aria-label="Name">
 		<span class="visual_label">First Name*</span>
 	</label>	
 	
 	<!-- LAST NAME -->
 	<label class="input_wrapper fancy_label half">
-		
 		<input type="text" name="data[l_name]" placeholder="" required aria-label="Name">
 		<span class="visual_label">Last  Name*</span>
 	</label>
 	
 	<!-- EMAIL -->
 	<label class="input_wrapper fancy_label half">
-		
 		<input type="email" name="data[email]" placeholder="" required aria-label="Email">
 		<span class="visual_label">Email*</span>
 	</label>
 	
 	<!-- PHONE -->
 	<label class="input_wrapper fancy_label half">
-		
 		<input type="text" name="data[phone]" placeholder="" required aria-label="Phone">
 		<span class="visual_label">Phone*</span>
 	</label>
 	
 	<!-- COMMENTS -->
 	<label class="input_wrapper fancy_label full">
-		
 		<textarea name="data[comments]" placeholder="" required aria-label="Comments"></textarea>
 		<span class="visual_label">Comments*</span>
 	</label>
 
 	<div class="submit_wrapper">
+		<!-- NETLIFY RECAPTCHA -->
+		<div data-netlify-recaptcha="true"></div>
+		
 		<input class="" type="submit" name="" value="SUBMIT" aria-label="Submit">
 		<!--<button class="submit">SUBMIT</button>-->
 	</div>

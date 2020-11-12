@@ -2,11 +2,19 @@
 
 HOLY MOUNTAIN FRAMEWORK - Primary framework JS file
 
+==========================================================
+
 NOTES
 
-	- This file is intended to be the basic underlying framework
-	for the site. Overrides to this code should be done 
+	- This file is intended to be a part of the basic underlying 
+	framework	for the site. Overrides to this code should be done 
 	in the script.js file.
+
+==========================================================
+
+EXAMPLES
+	
+
 
 ********************************************/
 

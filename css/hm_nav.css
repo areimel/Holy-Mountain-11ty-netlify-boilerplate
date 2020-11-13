@@ -31,12 +31,7 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 			align-items: center;
 			padding: 5px;
 		}
-		.nav .logo img{
-			
-			width: auto;;
-			height: 100%;
-			max-height: 120px;
-		}
+		
 
 		.nav .nav_button{
 			cursor: pointer;
@@ -46,13 +41,20 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 /***** ==================  *****/
 /***** Desktop Header Nav  *****/
 /***** ==================  *****/
-	#nav_desktop{}
+	#nav_desktop{
+		--logo_wdith: 150px;
+	}
+
+	#nav_desktop .logo{
+		width: var(--logo_wdith);
+	}
 
 	#nav_desktop .links{
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: flex-end;
+		width: calc(100% - var(--logo_wdith)) ;
 	}
 
 /***** =======  *****/

@@ -86,7 +86,24 @@ GENERAL
 ********************************************/
 
 	
+/***** ==================  *****/
+/***** Desktop Header Nav  *****/
+/***** ==================  *****/
+	#nav_desktop{
+		--logo_wdith: 150px;
+	}
 
+	#nav_desktop .logo{
+		width: var(--logo_wdith);
+	}
+
+	#nav_desktop .links{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		width: calc(100% - var(--logo_wdith)) ;
+	}
 	
 		
 

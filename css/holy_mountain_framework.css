@@ -13,7 +13,8 @@ NOTES
 /********************************************
 IMPORTS
 ********************************************/
-@import "/css/hm_modules/hm_nav.css";
+
+@import "/css/hm_modules/hm_nav.css?id=1";	//Nav - Header, Footer, Sidebar
 
 
 
@@ -27,7 +28,7 @@ GENERAL
 	/***** ROOT *****/
 	/***** ====  *****/
 		:root{
-			font-size: 10px;
+			
 		}
 
 	/***** ============== *****/
@@ -48,6 +49,7 @@ GENERAL
 			font-family: var(--font_sans);
 			text-rendering: auto;  /* override this in the main css file - test what works best */
 			-webkit-font-smoothing: antialiased;
+			font-size: 10px;
 		}
 		
 		html, body {
@@ -64,6 +66,8 @@ GENERAL
 			color: var(--black_1);
 			background-color: var(--white_1);
 			overflow-x: hidden;
+
+
 		}
 
 		body,

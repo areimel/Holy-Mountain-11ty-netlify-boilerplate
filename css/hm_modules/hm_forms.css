@@ -1,0 +1,308 @@
+/********************************************
+
+FORM ELEMENTS
+
+search key: --forms
+
+********************************************/
+
+	/***** ========== *****/
+	/***** BASIC FORM *****/
+	/***** ========== *****/
+		.--hm_form_1{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		/***** input wrappers *****/
+			.--hm_form_1 .input_wrapper{
+				width: 100%;
+				padding: 5px;
+				position: relative;
+			}
+			.--hm_form_1 .input_wrapper.half{
+				width: 50%;
+			}
+
+		/***** labels *****/
+
+
+		/***** inputs *****/
+			.--hm_form_1 .input_wrapper>input{
+				width: 100%;
+				border:solid 3px var(--white_1);
+				background-color: var(--white_1);
+				padding: 10px; /* padding + border = 10px, keeps things uniform */
+				transition: .25s ease-in-out;
+			}
+			.--hm_form_1 .input_wrapper>input:focus{
+				outline: none;
+				border:solid 3px var(--black_1);
+			}
+			.--hm_form_1 .input_wrapper>input::placeholder{
+				opacity: 1;
+				color: var(--black_1);
+			}
+
+		/***** textarea *****/
+			.--hm_form_1 .input_wrapper>textarea{
+				width: 100%;
+				border:solid 3px var(--white_1);
+				background-color: var(--white_1);
+				padding: 10px; /* padding + border = 10px, keeps things uniform */
+				margin-bottom: -5px; /* correcting mystery 5px at bottom */
+				transition: .25s ease-in-out;
+			}
+			.--hm_form_1 .input_wrapper>textarea:focus{
+				outline: none;
+				border:solid 3px var(--black_1);
+			}
+			.--hm_form_1 .input_wrapper>textarea::placeholder{
+				opacity: 1;
+				color: var(--black_1);
+			}
+
+
+		/***** submit *****/
+			.--hm_form_1 .submit_wrapper{
+				width: 100%;
+				padding: 2px 5px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				position: relative;
+			}
+			.--hm_form_1 .submit_wrapper>input[type="submit"]{
+				display: inline-block;
+				background-color: var(--white_1);
+				padding: 7px;
+				border:solid 3px var(--white_1);
+				cursor: pointer;
+				transition: .25s ease-in-out;
+			}
+			.--hm_form_1 .submit_wrapper>input[type="submit"]:hover{
+				border: solid 3px var(--black_1);
+			}
+
+			/* .hidden -used with <button> variant below */
+			.--hm_form_1 .submit_wrapper>input[type="submit"].hidden{
+				height: 0px;
+				width: 0px;
+				opacity: 0;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+
+			
+
+			/***** Button variant *****/
+				/* 	
+					button triggers a JS click on the real submit,
+					be sure to include a submit button with the .hidden class 
+				*/
+				.--hm_form_1 .submit_wrapper>button.submit{
+					-webkit-appearance:none;
+					display: inline-block;
+					background-color: var(--white_1);
+					padding: 7px;
+					border:solid 3px var(--white_1);
+					cursor: pointer;
+					transition: .25s ease-in-out;
+				}
+				.--hm_form_1 .submit_wrapper>button.submit:hover{
+					border: solid 3px var(--black_1);
+				}
+
+			
+
+			/***** Fancy Label variant (WIP) *****/
+				/* 
+					label must have .fancy_label class 
+				*/
+				.--hm_form_1 .input_wrapper.fancy_label>.visual_label{
+					position: absolute;
+					left: 20px;
+					top:50%;
+					transform: translate3d(0,-50%,0);
+					pointer-events: none;
+					display: inline-block;
+					transition: var(--short_transition);
+				}
+
+
+				/***** Focus and Valid states *****/
+				.--hm_form_1 .input_wrapper.fancy_label>input:focus + .visual_label ,
+				.--hm_form_1 .input_wrapper.fancy_label>input:valid + .visual_label ,
+				.--hm_form_1 .input_wrapper.fancy_label>textarea:focus + .visual_label ,
+				.--hm_form_1 .input_wrapper.fancy_label>textarea:valid + .visual_label {
+					position: absolute;
+					left: 5px;
+					top:-5px;
+					transform: translate3d(0,0%,0) scale(.8);
+				}
+
+
+
+
+
+
+
+	/***** Custom Checkbox *****/
+		.custom_checkbox{
+			color: var(--black_1);
+			background-color: var(--white_1);
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		.custom_checkbox>label{
+			cursor: pointer;
+			padding: 5px;
+		}
+		.custom_checkbox input[type="checkbox"] {
+			opacity: 0;
+			position: absolute;
+		}
+		
+		/* Unchecked style */
+			.custom_checkbox input[type="checkbox"] + .box .check {
+				display: none;
+			}
+			.custom_checkbox input[type="checkbox"] + .box .uncheck {
+				display: inline-block;
+			}
+
+		/* Checked style */
+			.custom_checkbox input[type="checkbox"]:checked + .box .check {
+				display: inline-block;
+			}
+			.custom_checkbox input[type="checkbox"]:checked + .box .uncheck {
+				display: none;
+			}
+
+	/***** CUSTOM RADIO BUTTON *****/
+		.custom_radio {
+			
+			color: var(--black_1);
+			background-color: var(--white_1);
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		.custom_radio>label{
+			position: relative;
+			cursor: pointer;
+			padding: 5px;
+		}
+		.custom_radio input[type="radio"] {
+			opacity: 0;
+			position: absolute;
+		}
+
+		/* Unchecked style */
+			.custom_radio input[type="radio"] + .box .check {
+				display: none;
+			}
+			.custom_radio input[type="radio"] + .box .uncheck {
+				display: inline-block;
+			}
+
+		/* Checked style */
+			.custom_radio input[type="radio"]:checked + .box .check {
+				display: inline-block;
+			}
+			.custom_radio input[type="radio"]:checked + .box .uncheck {
+				display: none;
+			}
+
+
+
+	/***** CUSTOM DROPDOWN/SELECT *****/
+		
+		.custom_select {
+			background: var(--white_1);
+			color: var(--black_1);
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			width: 100%;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.custom_select.active {
+			height: auto;
+		}
+		.custom_select .title {
+			z-index: 10;
+			background-color: var(--white_1);
+			padding: 0px 10px;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.custom_select .title i{
+			font-size: 1em;
+			padding-right: 10px;
+		}
+		.custom_select .dropdown {
+			z-index: 8;
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			left: 0;
+			top: calc(100%);
+			background-color: var(--white_1);
+			width: 100%;
+			transform-origin: top;
+			transition: 0.25s ease-in-out;
+			max-height: 0;
+			height: auto;
+			overflow: auto;
+		}
+		.custom_select .dropdown.active {
+			max-height: 200px;
+		}
+		.custom_select .dropdown label {
+			position: relative;
+		}
+		.custom_select .dropdown label input[type="radio"] {
+			padding: 5px;
+			opacity: 0;
+			width: 1px;
+			height: 1px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			
+		}
+		.custom_select .dropdown label input[type="radio"]:hover + .content {
+			background-color: #CECECE;
+		}
+		.custom_select .dropdown label input[type="radio"]:checked + .content {
+			background-color: #eaeaea;
+		}
+		.custom_select .dropdown label .content {
+			padding: 5px 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.4rem;
+			cursor: pointer;
+		}
+		.custom_select .dropdown label .content .icon {
+			display: inline-block;
+			width: 25px;
+			font-size: 1em;
+		}
+		.custom_select .dropdown label .content .copy {
+			width: calc(100% - 25px);
+			display: inline-block;
+			padding-left: 15px;
+		}
+

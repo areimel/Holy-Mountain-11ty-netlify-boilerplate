@@ -107,7 +107,7 @@ module.exports = function(eleventyConfig) {
   );
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid","css","jpg","jpeg","webp","png"],
+    templateFormats: ["md", "njk", "html", "liquid","css","jpg","jpeg","webp","png","gif"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.

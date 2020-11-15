@@ -4,48 +4,70 @@ HOLY MOUNTAIN FRAMEWORK - Framework CSS functions
 
 NOTES
 
-	- This framework file is intended for more advanced CSS
-	functions that we feel shouldn't be spread out over separate 
-	normal	and _responsive.css files
+	- 	This framework file is intended for more advanced CSS
+		functions that we feel shouldn't be spread out over separate 
+		normal	and _responsive.css files
 
 ********************************************/
+
+		
 	
-	/***** ============================ *****/
-	/*****  FlexBox data-attr functions  *****/
-	/***** ============================ *****/
+/***** ============================ *****/
+/*****  FlexBox data-attr functions  *****/
+/***** ============================ *****/
+
+/********************************************
+NOTES
+	- 	This block allows for easily setting the flex direction
+		on desktop and mobile
+********************************************/
+
+	/***** Rows *****/
+		[data-flex="row"]{
+			flex-direction: row;
+		}
+		[data-flex="row-reverse"]{
+			flex-direction: row-reverse;
+		}
+
+	/***** Columns *****/
+		[data-flex="column"]{
+			flex-direction: column;
+		}
+		[data-flex="column-reverse"]{
+			flex-direction: column-reverse;
+		}
+
+
+	@media only screen and (max-width : 1350px){
 
 		/***** Rows *****/
-			[data-flex="row"]{
+			[data-flex-mobile="row"]{
 				flex-direction: row;
 			}
-			[data-flex="row-reverse"]{
+			[data-flex-mobile="row-reverse"]{
 				flex-direction: row-reverse;
 			}
 
 		/***** Columns *****/
-			[data-flex="column"]{
+			[data-flex-mobile="column"]{
 				flex-direction: column;
 			}
-			[data-flex="column-reverse"]{
+			[data-flex-mobile="column-reverse"]{
 				flex-direction: column-reverse;
 			}
+	}
 
 
-		@media only screen and (max-width : 1350px){
 
-			/***** Rows *****/
-				[data-flex-mobile="row"]{
-					flex-direction: row;
-				}
-				[data-flex-mobile="row-reverse"]{
-					flex-direction: row-reverse;
-				}
+/***** ============ *****/
+/*****  Text Stroke   *****/
+/***** ============ *****/
+	.text_stroke{
+		--text_stroke_thickness: 3px; /* default - override in style.css */
+		--text_stroke_color: #000000; /* default - override in style.css */
+		--text_stroke: var(--text_stroke_thickness) 0 var(--text_stroke_color), 0 var(--text_stroke_thickness) var(--text_stroke_color), var(--text_stroke_thickness) 0 var(--text_stroke_color), 0 var(--text_stroke_thickness) var(--text_stroke_color);;
 
-			/***** Columns *****/
-				[data-flex-mobile="column"]{
-					flex-direction: column;
-				}
-				[data-flex-mobile="column-reverse"]{
-					flex-direction: column-reverse;
-				}
-		}
+		text-shadow: var(--text_stroke);
+
+	}

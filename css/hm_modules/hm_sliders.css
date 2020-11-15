@@ -1,0 +1,75 @@
+/********************************************
+
+SLIDERS
+
+search key: --sliders
+
+Contents:
+	- Standard Slider
+	- Multi-Element Slider (WIP)
+
+********************************************/
+	
+	/***** ===============  *****/
+	/***** Standard Slider *****/
+	/***** ===============  *****/
+		.--hm_swiper_1{
+			overflow-x: hidden;
+		}
+		.--hm_swiper_1 .swiper-wrapper{
+			margin-bottom: 50px;
+		}
+		.--hm_swiper_1 .swiper-slide{
+			box-sizing: border-box;
+			padding: 50px 35px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.--hm_swiper_1 .swiper-slide>.card{
+			width: 100%;
+			max-width: 800px;
+			background-color: #ececec;
+			display: flex;
+			box-shadow:
+			  0 1.1px 2.2px rgba(0, 0, 0, 0.02),
+			  0 2.7px 5.3px rgba(0, 0, 0, 0.028),
+			  0 5px 10px rgba(0, 0, 0, 0.035),
+			  0 8.9px 17.9px rgba(0, 0, 0, 0.042),
+			  0 16.7px 33.4px rgba(0, 0, 0, 0.05),
+			  0 40px 80px rgba(0, 0, 0, 0.07)
+			;
+		}
+		
+		/***** Image *****/
+			.--hm_swiper_1 .swiper-slide .image{
+				width: 300px;
+				background-size: cover;
+				background-position: center top;
+				background-repeat: no-repeat;
+			}
+
+		/***** Copy *****/
+			.--hm_swiper_1 .swiper-slide .copy{
+				width: calc(100% - 300px);
+				padding: 25px 0px 25px 0px;
+				background-color: #cecece;
+			}
+			.--hm_swiper_1 .swiper-slide .copy>.inner{
+				padding: 25px 35px;
+				position: relative;
+				left: -35px;
+				background-color: #f1f1f1;
+				box-shadow: -6px 8px 6px -6px var(--black_1);
+			}
+
+
+	/***** ====================  *****/
+	/***** Multi-Section Slider  *****/
+	/***** ====================  *****/
+
+
+
+	/***** ====================  *****/
+	/***** Multi-Section Slider  *****/
+	/***** ====================  *****/

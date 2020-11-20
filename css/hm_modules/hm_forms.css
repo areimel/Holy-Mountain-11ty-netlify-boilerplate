@@ -128,6 +128,8 @@ search key: --forms
 					pointer-events: none;
 					display: inline-block;
 					transition: var(--short_transition);
+					background-color: var(--white_1);
+					padding: 3px 8px;
 				}
 
 

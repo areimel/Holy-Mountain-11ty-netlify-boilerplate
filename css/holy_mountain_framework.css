@@ -14,12 +14,12 @@ NOTES
 IMPORTS
 ********************************************/
 
-@import "/css/hm_modules/hm_nav.css";	/* Navs - Header, Footer, Sidebar */
-@import "/css/hm_modules/hm_forms.css";	/* Forms */
+@import "/css/hm_modules/hm_nav.css";		/* Navs - Header, Footer, Sidebar */
+@import "/css/hm_modules/hm_forms.css";		/* Forms */
 @import "/css/hm_modules/hm_modals.css";	/* Modals/Pop-Ups */
 @import "/css/hm_modules/hm_notices.css";	/* Notices, Banners, Warnings */
 @import "/css/hm_modules/hm_sliders.css";	/* Sliders/Slideshows */
-@import "/css/hm_modules/hm_blog.css";	/* Sliders/Slideshows */
+@import "/css/hm_modules/hm_blog.css";		/* Blog Directory and Posts */
 
 
 /********************************************
@@ -108,7 +108,6 @@ GENERAL
 	/*****======= *****/
 		img {
 			max-width: 100%;
-			width: 100%;
 			height: auto;
 		}
 
@@ -117,6 +116,7 @@ GENERAL
 	/***** ========  *****/
 	/***** CLEARFIX *****/
 	/***** ========  *****/
+	/* Note: do not apply .clearfix to a flex element */
 		.clearfix:after {
 			display: block;
 			content: '';
@@ -175,12 +175,27 @@ GENERAL
 		}
 
 
-		/***** ======= *****/
-		/***** HIDDEN   *****/
-		/***** ======= *****/
-			.hidden {
-				display: none;
-			}
+	/***** ======= *****/
+	/***** HIDDEN   *****/
+	/***** ======= *****/
+		.hidden {
+			display: none;
+		}
+
+	/***** =========== *****/
+	/***** CODE BLOCK  *****/
+	/***** =========== *****/
+		code{
+			display: block;
+			background-color: var(--black_1);
+			color:var(--white_1);
+			font-family: var(--font_monospace);
+			font-size: var(--font_s);
+			padding: 10px;
+			margin: 10px 0;
+		}
+
+
 
 
 	
@@ -329,12 +344,12 @@ Contents:
 	/***** SECTION ELEMENTS  *****/
 	/***** ================= *****/
 
-		/***** =========== *****/
-		/***** HM SECTION 1 *****/
-		/***** =========== *****/
+		/***** ===================== *****/
+		/***** HM SECTION 1 - Generic  *****/
+		/***** ===================== *****/
 			.--hm_section_1{
 				width: 100%;
-				padding: 35px 0;px;
+				padding: 50px 0px;
 			}
 
 

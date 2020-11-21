@@ -148,9 +148,9 @@ GENERAL
 			position: relative;
 		}
 
-	/***** ============== *****/
-	/***** GRID CONTAINER *****/
-	/***** ============== *****/
+	/***** =================== *****/
+	/***** GRID CONTAINER - WIP *****/
+	/***** =================== *****/
 		.grid_container {
 			display: grid;
 			grid-template-columns: calc() 1450px calc();
@@ -454,10 +454,10 @@ Contents:
 
 
 		/***** =================== *****/
-		/***** template_2 - cards *****/
+		/***** hm_layout_2 - cards *****/
 		/***** =================== *****/
 			.--hm_layout_2{
-				
+				--columns: 4;
 			}
 		
 			/***** headline *****/
@@ -478,7 +478,7 @@ Contents:
 					justify-content: center;
 					flex-wrap: wrap;
 
-					--columns: 4;
+					
 				}
 
 			/***** Content Cells *****/
@@ -609,7 +609,7 @@ Contents:
 
 
 		/***** =============================== *****/
-		/***** template_4 - generic 50/50 split *****/
+		/***** template_4 - generic 50/50 split - MOVE TO LAYOUT *****/
 		/***** =============================== *****/
 			.--hm_template_4{
 				display: flex;

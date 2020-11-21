@@ -6,120 +6,127 @@ search key: --notices
 
 ********************************************/
 
-	/***** Cookie Notice *****/
-		#cookie_notice{
-			z-index: 10000;
-			position: fixed;
-			bottom: -100px;
-			left: 0;
-			width: 100%;
-			height: 100px;
-			padding: 15px 0;
-			background-color: rgba(26, 26, 26,.8);
-			transition: .25s ease-in-out;
-			transition-delay: 0s;
-		}
-		#cookie_notice.active{
-			bottom: 0px;
-			transition-delay: 1s;
-		}
-		#cookie_notice>.container{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			max-width: 900px;
-		}
-		#cookie_notice>.container>.copy{
-			color: var(--white_1);
-			width: calc(100% - 150px);
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-		}
-		#cookie_notice>.container>.copy>.headline{
+/***** ============= *****/
+/***** Cookie Notice *****/
+/***** ============= *****/
+	#cookie_notice{
+		z-index: 10000;
+		position: fixed;
+		bottom: -100px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		padding: 15px 0;
+		background-color: rgba(26, 26, 26,.8);
+		transition: .25s ease-in-out;
+		transition-delay: 0s;
+	}
+	#cookie_notice.active{
+		bottom: 0px;
+		transition-delay: 1s;
+	}
+	#cookie_notice>.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 900px;
+	}
+	#cookie_notice>.container>.copy{
+		color: var(--white_1);
+		width: calc(100% - 150px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	#cookie_notice>.container>.copy>.headline{
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	#cookie_notice>.container>.copy>.body{
+		font-weight: 600;
+		font-size: 1.4rem;
+	}
+
+	#cookie_notice>.container>.interaction{
+		color: var(--white_1);
+		width: 150px;
+	}
+	#cookie_notice>.container>.interaction>.close{
+		padding: 15px;
+		font-size: 2.4rem;
+		color: var(--white_1);
+		background-color: transparent;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		
+	}
+	#cookie_notice>.container>.interaction>.close>i{
+		padding: 5px;
+		cursor: pointer;
+		transition: .25s ease-in-out;
+	}
+	#cookie_notice>.container>.interaction>.close>.yes:hover{
+		color: green;
+	}
+	#cookie_notice>.container>.interaction>.close>.no:hover{
+		color: red;
+	}
+
+
+/***** ========== *****/
+/***** IE Warning *****/
+/***** ========== *****/
+	#ie_warning{
+		z-index: 10000;
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(200,0,0,.95);
+		padding-top: 25px;
+		padding-bottom: 25px;
+		display: none;
+	}
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		#ie_warning{display: block;}
+	}
+	#ie_warning>.container{
+		max-width: 900px;
+	}
+
+	/***** Copy *****/
+		#ie_warning .copy>.headline{
+			color: #fff;
+			text-align: center;
 			font-weight: 600;
-			font-size: 1.8rem;
+			margin-bottom: 15px;
+			font-size: 50px;
 		}
-		#cookie_notice>.container>.copy>.body{
-			font-weight: 600;
-			font-size: 1.4rem;
+		#ie_warning .copy>.body{
+			color: #fff;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 36px;
 		}
 
-		#cookie_notice>.container>.interaction{
-			color: var(--white_1);
-			width: 150px;
+	/***** Links *****/
+
+		#ie_warning .interaction{
+			text-align: center;
 		}
-		#cookie_notice>.container>.interaction>.close{
-			padding: 15px;
-			font-size: 2.4rem;
-			color: var(--white_1);
-			background-color: transparent;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			
-		}
-		#cookie_notice>.container>.interaction>.close>i{
+		#ie_warning .interaction>a{
+			display: inline-block;
+			color: #fff;
 			padding: 5px;
-			cursor: pointer;
-			transition: .25s ease-in-out;
+			margin: 0 15px;
 		}
-		#cookie_notice>.container>.interaction>.close>.yes:hover{
-			color: green;
+		#ie_warning .interaction>a>i{
+			font-size: 50px;
+			margin-bottom: 5px;
 		}
-		#cookie_notice>.container>.interaction>.close>.no:hover{
-			color: red;
+		#ie_warning .interaction>a>span{
+			display: block;
 		}
-
-
-	/***** IE Warning *****/
-		#ie_warning{
-			z-index: 100000;
-			position:fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			background-color: rgba(200,0,0,.8);
-			padding-top: 25px;
-			padding-bottom: 25px;
-			display: none;
-		}
-		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-			#ie_warning{display: block;}
-		}
-		#ie_warning>.container{
-			max-width: 900px;
-		}
-
-		/***** Copy *****/
-			#ie_warning .copy>.headline{
-				color: var(--white_1);
-				text-align: center;
-				font-weight: 600;
-				margin-bottom: 15px;
-			}
-			#ie_warning .copy>.body{
-				color: var(--white_1);
-				text-align: center;
-				margin-bottom: 15px;
-			}
-
-		/***** Links *****/
-
-			#ie_warning .interaction{
-				text-align: center;
-			}
-			#ie_warning .interaction>a{
-				display: inline-block;
-				color: var(--white_1);
-				padding: 5px;
-				margin: 0 15px;
-			}
-			#ie_warning .interaction>a>i{
-				font-size: 3rem;
-				margin-bottom: 5px;
-			}
-			#ie_warning .interaction>a>span{
-				display: block;
-			}

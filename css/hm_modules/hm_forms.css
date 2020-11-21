@@ -9,18 +9,18 @@ search key: --forms
 	/***** ========== *****/
 	/***** BASIC FORM *****/
 	/***** ========== *****/
-		.--hm_form_1{
+		.-hm_form_1{
 			display: flex;
 			flex-wrap: wrap;
 		}
 
 		/***** input wrappers *****/
-			.--hm_form_1 .input_wrapper{
+			.-hm_form_1 .input_wrapper{
 				width: 100%;
 				padding: 5px;
 				position: relative;
 			}
-			.--hm_form_1 .input_wrapper.half{
+			.-hm_form_1 .input_wrapper.half{
 				width: 50%;
 			}
 
@@ -28,24 +28,24 @@ search key: --forms
 
 
 		/***** inputs *****/
-			.--hm_form_1 .input_wrapper>input{
+			.-hm_form_1 .input_wrapper>input{
 				width: 100%;
 				border:solid 3px var(--white_1);
 				background-color: var(--white_1);
 				padding: 10px; /* padding + border = 10px, keeps things uniform */
 				transition: .25s ease-in-out;
 			}
-			.--hm_form_1 .input_wrapper>input:focus{
+			.-hm_form_1 .input_wrapper>input:focus{
 				outline: none;
 				border:solid 3px var(--black_1);
 			}
-			.--hm_form_1 .input_wrapper>input::placeholder{
+			.-hm_form_1 .input_wrapper>input::placeholder{
 				opacity: 1;
 				color: var(--black_1);
 			}
 
 		/***** textarea *****/
-			.--hm_form_1 .input_wrapper>textarea{
+			.-hm_form_1 .input_wrapper>textarea{
 				width: 100%;
 				border:solid 3px var(--white_1);
 				background-color: var(--white_1);
@@ -53,18 +53,18 @@ search key: --forms
 				margin-bottom: -5px; /* correcting mystery 5px at bottom */
 				transition: .25s ease-in-out;
 			}
-			.--hm_form_1 .input_wrapper>textarea:focus{
+			.-hm_form_1 .input_wrapper>textarea:focus{
 				outline: none;
 				border:solid 3px var(--black_1);
 			}
-			.--hm_form_1 .input_wrapper>textarea::placeholder{
+			.-hm_form_1 .input_wrapper>textarea::placeholder{
 				opacity: 1;
 				color: var(--black_1);
 			}
 
 
 		/***** submit *****/
-			.--hm_form_1 .submit_wrapper{
+			.-hm_form_1 .submit_wrapper{
 				width: 100%;
 				padding: 2px 5px;
 				display: flex;
@@ -72,7 +72,7 @@ search key: --forms
 				justify-content: flex-end;
 				position: relative;
 			}
-			.--hm_form_1 .submit_wrapper>input[type="submit"]{
+			.-hm_form_1 .submit_wrapper>input[type="submit"]{
 				display: inline-block;
 				background-color: var(--white_1);
 				padding: 7px;
@@ -80,12 +80,12 @@ search key: --forms
 				cursor: pointer;
 				transition: .25s ease-in-out;
 			}
-			.--hm_form_1 .submit_wrapper>input[type="submit"]:hover{
+			.-hm_form_1 .submit_wrapper>input[type="submit"]:hover{
 				border: solid 3px var(--black_1);
 			}
 
 			/* .hidden -used with <button> variant below */
-			.--hm_form_1 .submit_wrapper>input[type="submit"].hidden{
+			.-hm_form_1 .submit_wrapper>input[type="submit"].hidden{
 				height: 0px;
 				width: 0px;
 				opacity: 0;
@@ -101,7 +101,7 @@ search key: --forms
 					button triggers a JS click on the real submit,
 					be sure to include a submit button with the .hidden class 
 				*/
-				.--hm_form_1 .submit_wrapper>button.submit{
+				.-hm_form_1 .submit_wrapper>button.submit{
 					-webkit-appearance:none;
 					display: inline-block;
 					background-color: var(--white_1);
@@ -110,7 +110,7 @@ search key: --forms
 					cursor: pointer;
 					transition: .25s ease-in-out;
 				}
-				.--hm_form_1 .submit_wrapper>button.submit:hover{
+				.-hm_form_1 .submit_wrapper>button.submit:hover{
 					border: solid 3px var(--black_1);
 				}
 
@@ -120,7 +120,7 @@ search key: --forms
 				/* 
 					label must have .fancy_label class 
 				*/
-				.--hm_form_1 .input_wrapper.fancy_label>.visual_label{
+				.-hm_form_1 .input_wrapper.fancy_label>.visual_label{
 					position: absolute;
 					left: 20px;
 					top:50%;
@@ -134,10 +134,10 @@ search key: --forms
 
 
 				/***** Focus and Valid states *****/
-				.--hm_form_1 .input_wrapper.fancy_label>input:focus + .visual_label ,
-				.--hm_form_1 .input_wrapper.fancy_label>input:valid + .visual_label ,
-				.--hm_form_1 .input_wrapper.fancy_label>textarea:focus + .visual_label ,
-				.--hm_form_1 .input_wrapper.fancy_label>textarea:valid + .visual_label {
+				.-hm_form_1 .input_wrapper.fancy_label>input:focus + .visual_label ,
+				.-hm_form_1 .input_wrapper.fancy_label>input:valid + .visual_label ,
+				.-hm_form_1 .input_wrapper.fancy_label>textarea:focus + .visual_label ,
+				.-hm_form_1 .input_wrapper.fancy_label>textarea:valid + .visual_label {
 					position: absolute;
 					left: 5px;
 					top:-5px;

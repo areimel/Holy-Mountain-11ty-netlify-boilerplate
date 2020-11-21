@@ -298,14 +298,14 @@ Contents:
 	/***** ============== *****/
 
 		/***** Hero 1 *****/
-			.--hm_hero_1{
+			.-hm_hero_1{
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center center;
 				padding: 100px 0;
 				min-height: 600px;
 			}
-			.--hm_hero_1>.container{
+			.-hm_hero_1>.container{
 				height: 100%;
 				display: flex;
 				justify-content: center;
@@ -313,7 +313,7 @@ Contents:
 			}
 
 			/***** Content *****/
-				.--hm_hero_1 .copy{
+				.-hm_hero_1 .copy{
 					padding: 35px;
 					position: relative;
 					backdrop-filter: blur(10px);
@@ -324,17 +324,17 @@ Contents:
 
 					max-width: 800px;
 				}
-				.--hm_hero_1 .copy>.headline{
+				.-hm_hero_1 .copy>.headline{
 					color: var(--white_1);
 					font-size: 8.5rem;
 					margin-bottom:  -15px;
 				}
-				.--hm_hero_1 .copy>.subhead{
+				.-hm_hero_1 .copy>.subhead{
 					color: var(--white_1);
 					font-size: 3.6rem;
 					margin-bottom: 35px;
 				}
-				.--hm_hero_1 .copy>.body{
+				.-hm_hero_1 .copy>.body{
 					color: var(--white_1);
 					font-size: 1.8rem;
 					text-align: justify;
@@ -347,7 +347,7 @@ Contents:
 		/***** ===================== *****/
 		/***** HM SECTION 1 - Generic  *****/
 		/***** ===================== *****/
-			.--hm_section_1{
+			.-hm_section_1{
 				width: 100%;
 				padding: 50px 0px;
 			}
@@ -360,7 +360,7 @@ Contents:
 		/***** ====================================== *****/
 		/***** hm_layout_1 - image/copy side by side *****/
 		/***** ====================================== *****/
-			.--hm_layout_1{
+			.-hm_layout_1{
 				display: flex;
 
 				/* Set static width here, override in style.css file */
@@ -369,7 +369,7 @@ Contents:
 
 
 			/***** static size: this class styles the div with a fixed pixel size  *****/
-				.--hm_layout_1>.static_size{
+				.-hm_layout_1>.static_size{
 					width: var(--static_width); /* sets the static size */
 					
 					padding: 100px 35px;
@@ -382,7 +382,7 @@ Contents:
 					background-position: center;
 				}
 
-				.--hm_layout_1>.static_size>.inner{
+				.-hm_layout_1>.static_size>.inner{
 					width: 100%;
 					max-width: 650px;
 					background-color: #ececec;
@@ -391,31 +391,31 @@ Contents:
 				
 				
 
-				.--hm_layout_1>.static_size>.inner>.headline{
+				.-hm_layout_1>.static_size>.inner>.headline{
 					/*margin-bottom: 15px;*/
 				}
-				.--hm_layout_1>.static_size>.inner>.body{
+				.-hm_layout_1>.static_size>.inner>.body{
 					margin: 15px 0;
 				}
 
 				/***** first/last of type modifiers *****/
-					.--hm_layout_1>.static_size:first-of-type>{
+					.-hm_layout_1>.static_size:first-of-type>{
 						/* when element is on the left side */
 					}
-					.--hm_layout_1>.static_size:last-of-type>{
+					.-hm_layout_1>.static_size:last-of-type>{
 						/* when element is on the right side */
 					}
 
 				/***** first/last of type modifiers *****/
-					.--hm_layout_1>.static_size:first-of-type>{
+					.-hm_layout_1>.static_size:first-of-type>{
 						/* when element is on the left side */
 					}
-					.--hm_layout_1>.static_size:last-of-type>{
+					.-hm_layout_1>.static_size:last-of-type>{
 						/* when element is on the right side */
 					}
 
 			/***** dynamic size: this class styles the div that fills the remaining space  *****/
-				.--hm_layout_1>.dynamic_size{
+				.-hm_layout_1>.dynamic_size{
 					width: calc(100% - var(--static_width)); /* sets the dynamic size */
 
 					padding: 100px 35px;
@@ -427,7 +427,7 @@ Contents:
 					background-repeat: no-repeat;
 					background-position: center;
 				}
-				.--hm_layout_1>.dynamic_size>.inner{
+				.-hm_layout_1>.dynamic_size>.inner{
 					width: 100%;
 					max-width: 650px;
 					background-color: #ececec;
@@ -436,18 +436,18 @@ Contents:
 				
 				
 
-				.--hm_layout_1>.dynamic_size>.inner>.headline{
+				.-hm_layout_1>.dynamic_size>.inner>.headline{
 					/*margin-bottom: 15px;*/
 				}
-				.--hm_layout_1>.dynamic_size>.inner>.body{
+				.-hm_layout_1>.dynamic_size>.inner>.body{
 					margin: 15px 0;
 				}
 
 				/***** first/last of type modifiers *****/
-					.--hm_layout_1>.dynamic_size:first-of-type>{
+					.-hm_layout_1>.dynamic_size:first-of-type>{
 						/* when element is on the left side */
 					}
-					.--hm_layout_1>.dynamic_size:last-of-type>{
+					.-hm_layout_1>.dynamic_size:last-of-type>{
 						/* when element is on the right side */
 					}
 				
@@ -456,16 +456,16 @@ Contents:
 		/***** =================== *****/
 		/***** hm_layout_2 - cards *****/
 		/***** =================== *****/
-			.--hm_layout_2{
+			.-hm_layout_2{
 				--columns: 4;
 			}
 		
 			/***** headline *****/
-				.--hm_layout_2>.headline{
+				.-hm_layout_2>.headline{
 					padding: 0 60px;
 					margin-bottom: 15px;
 				}
-				.--hm_layout_2>.headline>h3{
+				.-hm_layout_2>.headline>h3{
 					font-size: var(--font_xl);
 					font-weight: 600;
 					display:inline-block;
@@ -473,7 +473,7 @@ Contents:
 
 
 			/***** Content Layout *****/
-				.--hm_layout_2>.content{
+				.-hm_layout_2>.content{
 					display: flex;
 					justify-content: center;
 					flex-wrap: wrap;
@@ -482,7 +482,7 @@ Contents:
 				}
 
 			/***** Content Cells *****/
-				.--hm_layout_2>.content>.cell_wrapper{
+				.-hm_layout_2>.content>.cell_wrapper{
 					width: calc(100% / var(--columns));
 					display: flex;
 					align-items: center;
@@ -491,15 +491,15 @@ Contents:
 				}
 				
 				/***** First and Last variants *****/
-					.--hm_layout_2>.content>.cell_wrapper:first-of-type{
+					.-hm_layout_2>.content>.cell_wrapper:first-of-type{
 						
 					}
-					.--hm_layout_2>.content>.cell_wrapper:last-of-type{
+					.-hm_layout_2>.content>.cell_wrapper:last-of-type{
 						
 					}
 
 
-				.--hm_layout_2>.content>.cell_wrapper>.cell{
+				.-hm_layout_2>.content>.cell_wrapper>.cell{
 					background-color: var(--grey_1);
 					padding: 15px 15px 100px 15px; /* extra 100px on bottom is to create safe zone for CTA */
 					display: flex;
@@ -511,18 +511,18 @@ Contents:
 				}
 				
 			/***** Inner Content *****/
-				.--hm_layout_2 .cell>.headline{
+				.-hm_layout_2 .cell>.headline{
 					font-size: 3rem;
 					font-weight: 600;
 					padding: 0px 15px 15px; /* Extra padding lines up the headline with the cards */
 					border-bottom: solid 3px;
 					margin-bottom: 15px
 				}
-				.--hm_layout_2 .cell>.body{
+				.-hm_layout_2 .cell>.body{
 					font-size: 1.6rem;
 					padding: 0px 15px 15px;
 				}
-				.--hm_layout_2 .cell>.cta{
+				.-hm_layout_2 .cell>.cta{
 					position: absolute;
 					bottom: 0;
 					left: 0;
@@ -535,36 +535,36 @@ Contents:
 				}
 		
 		
-		/* No longer needed with .--hm_layout_2 */
+		/* No longer needed with .-hm_layout_2 */
 		/***** ================= *****/
 		/***** template_3 - Grid  *****/
 		/***** ================= *****/
 
-			.--hm_template_3{
+			.-hm_template_3{
 				padding: 50px 0 100px;
 			}
 
 			/***** headline *****/
-				.--hm_template_3>.headline{
+				.-hm_template_3>.headline{
 					
 					margin-bottom: 15px;
 				}
-				.--hm_template_3>.headline>h3{
+				.-hm_template_3>.headline>h3{
 					font-size: var(--font_xl);
 					font-weight: 600;
 					display:inline-block;
 				}
 
-			.--hm_template_3 .content{
+			.-hm_template_3 .content{
 				display: flex;
 			}
 
-			.--hm_template_3>.content{
+			.-hm_template_3>.content{
 				display: flex;
 				justify-content: flex-start;
 				flex-wrap: wrap;
 			}
-			.--hm_template_3>.content>.cell{
+			.-hm_template_3>.content>.cell{
 				width: 25%;
 				display: flex;
 				align-items: center;
@@ -572,7 +572,7 @@ Contents:
 				padding: 25px;
 			}
 
-			.--hm_template_3>.content>.cell>.card{
+			.-hm_template_3>.content>.cell>.card{
 				background-color: #ececec;
 				padding: 15px 15px 100px 15px; /* extra 100px on bottom is to create safe zone for CTA */
 				display: flex;
@@ -584,18 +584,18 @@ Contents:
 				position: relative;
 			}
 
-			.--hm_template_3>.content>.cell>.card>.headline{
+			.-hm_template_3>.content>.cell>.card>.headline{
 				font-size: 3rem;
 				font-weight: 600;
 				padding: 0px 15px; /* Extra padding lines up the headline with the cards */
 				border-bottom: solid 3px;
 				margin-bottom: 15px
 			}
-			.--hm_template_3>.content>.cell>.card>.body{
+			.-hm_template_3>.content>.cell>.card>.body{
 				font-size: 1.6rem;
 				margin-bottom: 15px;
 			}
-			.--hm_template_3>.content>.cell>.card>.cta{
+			.-hm_template_3>.content>.cell>.card>.cta{
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -611,41 +611,41 @@ Contents:
 		/***** =============================== *****/
 		/***** template_4 - generic 50/50 split - MOVE TO LAYOUT *****/
 		/***** =============================== *****/
-			.--hm_template_4{
+			.-hm_template_4{
 				display: flex;
 				
 			}
 
 			/***** headline *****/
-				.--hm_template_4>.headline{
+				.-hm_template_4>.headline{
 					
 					margin-bottom: 15px;
 				}
-				.--hm_template_4>.headline>h3{
+				.-hm_template_4>.headline>h3{
 					font-size: var(--font_xl);
 					font-weight: 600;
 					display:inline-block;
 				}
 
 			/***** cell *****/
-				.--hm_template_4>.cell{
+				.-hm_template_4>.cell{
 					width: 50%;
 					padding: 100px 35px;
 					display: flex;
 					align-items: center;
 					justify-content: center
 				}
-				.--hm_template_4>.cell>.inner{
+				.-hm_template_4>.cell>.inner{
 					width: 100%;
 					max-width: 500px;
 					background-color: #cecece;
 					padding: 35px;
 				}
 
-				.--hm_template_4>.cell>.inner>h2{
+				.-hm_template_4>.cell>.inner>h2{
 					/*margin-bottom: 15px;*/
 				}
-				.--hm_template_4>.cell>.inner>p{
+				.-hm_template_4>.cell>.inner>p{
 					margin: 15px 0;
 				}
 
@@ -654,23 +654,23 @@ Contents:
 		/***** template_5 - accordian *****/
 		/***** ==================================== *****/
 
-			.--hm_template_5{
+			.-hm_template_5{
 				padding: 100px 0px;
 			}
 
 			/***** headline *****/
-				.--hm_template_5>.headline{
+				.-hm_template_5>.headline{
 					
 					margin-bottom: 15px;
 				}
-				.--hm_template_5>.headline>h3{
+				.-hm_template_5>.headline>h3{
 					font-size: var(--font_xl);
 					font-weight: 600;
 					display:inline-block;
 				}
 
 			/***** content *****/
-				.--hm_template_5 .content>.cell{
+				.-hm_template_5 .content>.cell{
 					width:100%;
 					
 					background-color: #fff;
@@ -688,13 +688,13 @@ Contents:
 
 				}
 
-				.--hm_template_5 .content>.cell:hover{
+				.-hm_template_5 .content>.cell:hover{
 
 
 				}
 
 				/***** label *****/
-					.--hm_template_5 .content>.cell>.label{
+					.-hm_template_5 .content>.cell>.label{
 						display: flex;
 						align-items: center;
 						justify-content: flex-start;
@@ -703,10 +703,10 @@ Contents:
 						color: #000;
 						padding: 35px 35px;
 					}
-					.--hm_template_5 .content>.cell>.label:hover{
+					.-hm_template_5 .content>.cell>.label:hover{
 
 					}
-					.--hm_template_5 .content>.cell>.label>.icon{
+					.-hm_template_5 .content>.cell>.label>.icon{
 						display: flex;
 						align-items: center;
 						justify-content: center;
@@ -718,34 +718,34 @@ Contents:
 						color: #fff;
 						font-size: 1.8rem;
 					}
-					.--hm_template_5 .content>.cell>.label>.icon>.open{
+					.-hm_template_5 .content>.cell>.label>.icon>.open{
 						display: block;
 						position: relative;
 						left: 1px;
 					}
-					.--hm_template_5 .content>.cell>.label>.icon>.close{
+					.-hm_template_5 .content>.cell>.label>.icon>.close{
 						display: none;
 						position: relative;
 						left: 1px;
 					}
 					/***** active state *****/
-						.--hm_template_5 .content>.cell.active>.label>.icon>.open{
+						.-hm_template_5 .content>.cell.active>.label>.icon>.open{
 							display: none;
 						}
-						.--hm_template_5 .content>.cell.active>.label>.icon>.close{
+						.-hm_template_5 .content>.cell.active>.label>.icon>.close{
 							display: block;
 						}
 
-					.--hm_template_5 .content>.cell>.label>.title{
+					.-hm_template_5 .content>.cell>.label>.title{
 						font-size: 3.6rem;
 					}
 				
 				/***** copy *****/
-					.--hm_template_5 .content>.cell>.copy{
+					.-hm_template_5 .content>.cell>.copy{
 						display: none;
 						padding: 15px 35px 35px;
 					}
-					.--hm_template_5 .content>.cell>.copy p{
+					.-hm_template_5 .content>.cell>.copy p{
 						font-size: 1.8rem;
 					}
 
@@ -756,10 +756,10 @@ Contents:
 		/***** ==================================== *****/
 			
 			/***** headline *****/
-				.--hm_template_6 .headline{
+				.-hm_template_6 .headline{
 					margin-bottom: 15px;
 				}
-				.--hm_template_6 .headline>h3{
+				.-hm_template_6 .headline>h3{
 					font-size: var(--font_xl);
 					font-weight: 600;
 					display:inline-block;
@@ -772,7 +772,7 @@ Contents:
 		/***** ============================== *****/
 
 			/***** Layout *****/
-				.--hm_template_7{
+				.-hm_template_7{
 					display: flex;
 					justify-content: center;
 					align-items: stretch;
@@ -783,14 +783,14 @@ Contents:
 				}
 
 			/***** Cells *****/
-				.--hm_template_7>.cell_wrapper{
+				.-hm_template_7>.cell_wrapper{
 					width: var(--cell_width);
 					display: flex;
 					justify-content: center;
 					padding: 15px;
 					
 				}
-				.--hm_template_7>.cell_wrapper>.cell{
+				.-hm_template_7>.cell_wrapper>.cell{
 					height: 100%;
 					width: 100%;
 					padding:15px;
@@ -805,15 +805,15 @@ Contents:
 		/***** ==================   *****/
 		/***** CUSTOM LIST STYLING  *****/
 		/***** ==================   *****/
-			.--hm_custom_list{
+			.-hm_custom_list{
 				list-style: none;
 				padding:0px 25px;
 			}
-			.--hm_custom_list>li{
+			.-hm_custom_list>li{
 				margin-bottom: 5px;
 				position: relative;
 			}
-			.--hm_custom_list>li:before{
+			.-hm_custom_list>li:before{
 				font-family: "Font Awesome 5 Free";
 				font-weight: 900;
 				content: '\f0da';
@@ -825,14 +825,14 @@ Contents:
 			}
 
 		/***** Content 1 *****/
-			.--hm_content_1{}
+			.-hm_content_1{}
 			
-			.--hm_content_1 .heading{
+			.-hm_content_1 .heading{
 				font-size: var(--font_xl);	
 				display: inline-block;
 				margin-bottom: 15px;
 			}
-			.--hm_content_1 .copy{
+			.-hm_content_1 .copy{
 				font-size: 1.8rem;	
 			}
 
@@ -856,27 +856,27 @@ search key: --buttons
 	
 	
 	/***** Button 1 - Color Change *****/
-		.--hm_button_1 {
+		.-hm_button_1 {
 			border: solid 3px #000;
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
 			transition: var(--short_transition);
 		}
-		.--hm_button_1:hover {
+		.-hm_button_1:hover {
 			background-color: #999;
 			color: #fff;
 		}
 
 	/***** Button 2 - 3D*****/
-		.--hm_button_2 {
+		.-hm_button_2 {
 			border: solid 3px #000;
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
 			transition: var(--short_transition);
 		}
-		.--hm_button_2:hover {
+		.-hm_button_2:hover {
 			background-color: #999;
 			color: #fff;
 			transform: translate3d(-5px, -5px, 0);
@@ -884,27 +884,27 @@ search key: --buttons
 		}
 
 	/***** Button 3 - Icon *****/
-		.--hm_button_3 {
+		.-hm_button_3 {
 			border: solid 3px #000;
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
 			transition: var(--short_transition);
 		}
-		.--hm_button_3 i{
+		.-hm_button_3 i{
 			font-size: .8em;
 			padding-left: 5px;
 			transition: var(--short_transition);
 		}
-		.--hm_button_3:hover{
+		.-hm_button_3:hover{
 			text-decoration: underline;
 		}
-		.--hm_button_3:hover i{
+		.-hm_button_3:hover i{
 			transform: translate3d(5px,0,0);
 		}
 
 	/***** Button 4 - Border Change *****/
-		.--hm_button_4 {
+		.-hm_button_4 {
 			border: solid 3px var(--grey_2);
 			background-color: var(--white_1);
 			display: inline-block;
@@ -912,7 +912,7 @@ search key: --buttons
 			cursor: pointer;
 			transition: var(--short_transition);
 		}
-		.--hm_button_4:hover {
+		.-hm_button_4:hover {
 			border-color: var(--black_1);
 		}
 
@@ -972,7 +972,7 @@ search key: --tooltips
 search key: --404
 
 ********************************************/
-	.--hm_template_404>.container{
+	.-hm_template_404>.container{
 		height: 90vh;
 		display: flex;
 		flex-direction: column;
@@ -981,11 +981,11 @@ search key: --404
 		padding-top: 35px;
 		padding-bottom: 35px;
 	}
-	.--hm_template_404>.container h1{
+	.-hm_template_404>.container h1{
 		font-size: 12rem;
 		margin-bottom: 35px;
 		margin-top: 0px;
 	}
-	.--hm_template_404>.container p{
+	.-hm_template_404>.container p{
 		font-size: 3.5rem;
 	}

@@ -396,7 +396,7 @@ TEMPLATE_5 - ACCORDIAN ELEMENTS
 
 $(document).ready(function(){
 	
-	$(".--hm_template_5 .cell>.label").click(function(){
+	$(".-hm_template_5 .cell>.label").click(function(){
 		$(this).hm_accordion();
 	});
 
@@ -404,16 +404,16 @@ $(document).ready(function(){
 
 		if ($(this).parents(".cell").hasClass("active")) {
 			//Close all
-				$(".--hm_template_5 .cell").removeClass("active");
-				$(".--hm_template_5 .cell>.copy").hide();
+				$(".-hm_template_5 .cell").removeClass("active");
+				$(".-hm_template_5 .cell>.copy").hide();
 				//console.log('close');
 		} else {
 			//Close all
-				$(".--hm_template_5 .cell").removeClass("active");
-				$(".--hm_template_5 .cell>.copy").hide();
+				$(".-hm_template_5 .cell").removeClass("active");
+				$(".-hm_template_5 .cell>.copy").hide();
 			//Open
 				$(this).parents(".cell").addClass("active");
-				$(".--hm_template_5 .cell.active>.copy").show();
+				$(".-hm_template_5 .cell.active>.copy").show();
 				//console.log('open');
 		}
 

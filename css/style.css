@@ -68,7 +68,7 @@ BASIC FRAMEWORK OVERRIDES
 	/***** ==================  *****/
 	/***** Custom List Styling *****/
 	/***** ==================  *****/
-		.--hm_custom_list>li:before{
+		.-hm_custom_list>li:before{
 			/* Set custom list icons */
 			content: '\f0da';
 			padding-right: 10px;
@@ -124,16 +124,16 @@ HOME PAGE
 	/***** Hero *****/
 	/***** ==== *****/
 
-		.--hm_hero_1{
+		.-hm_hero_1{
 			background-position: center top;
 		}
 
 		/***** Content *****/
-			.--hm_hero_1 .headline{
+			.-hm_hero_1 .headline{
 				font-family:  var(--font_display);
 				font-weight: 100;
 			}
-			.--hm_hero_1 .subhead{
+			.-hm_hero_1 .subhead{
 				font-family:  var(--font_display);
 				font-weight: 100;
 			}

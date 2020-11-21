@@ -13,20 +13,20 @@ Contents:
 	/***** ===============  *****/
 	/***** Standard Slider *****/
 	/***** ===============  *****/
-		.--hm_swiper_1{
+		.-hm_swiper_1{
 			overflow-x: hidden;
 		}
-		.--hm_swiper_1 .swiper-wrapper{
+		.-hm_swiper_1 .swiper-wrapper{
 			margin-bottom: 50px;
 		}
-		.--hm_swiper_1 .swiper-slide{
+		.-hm_swiper_1 .swiper-slide{
 			box-sizing: border-box;
 			padding: 50px 35px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
-		.--hm_swiper_1 .swiper-slide>.card{
+		.-hm_swiper_1 .swiper-slide>.card{
 			width: 100%;
 			max-width: 800px;
 			background-color: #ececec;
@@ -42,7 +42,7 @@ Contents:
 		}
 		
 		/***** Image *****/
-			.--hm_swiper_1 .swiper-slide .image{
+			.-hm_swiper_1 .swiper-slide .image{
 				width: 300px;
 				background-size: cover;
 				background-position: center top;
@@ -50,12 +50,12 @@ Contents:
 			}
 
 		/***** Copy *****/
-			.--hm_swiper_1 .swiper-slide .copy{
+			.-hm_swiper_1 .swiper-slide .copy{
 				width: calc(100% - 300px);
 				padding: 25px 0px 25px 0px;
 				background-color: #cecece;
 			}
-			.--hm_swiper_1 .swiper-slide .copy>.inner{
+			.-hm_swiper_1 .swiper-slide .copy>.inner{
 				padding: 25px 35px;
 				position: relative;
 				left: -35px;

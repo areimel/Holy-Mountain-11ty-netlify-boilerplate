@@ -14,12 +14,13 @@ NOTES
 IMPORTS
 ********************************************/
 
-@import "/css/hm_modules/hm_nav.css";		/* Navs - Header, Footer, Sidebar */
-@import "/css/hm_modules/hm_forms.css";		/* Forms */
-@import "/css/hm_modules/hm_modals.css";	/* Modals/Pop-Ups */
-@import "/css/hm_modules/hm_notices.css";	/* Notices, Banners, Warnings */
-@import "/css/hm_modules/hm_sliders.css";	/* Sliders/Slideshows */
-@import "/css/hm_modules/hm_blog.css";		/* Blog Directory and Posts */
+@import "/css/hm_modules/hm_nav.css";			/* Navs - Header, Footer, Sidebar */
+@import "/css/hm_modules/hm_forms.css";			/* Forms */
+@import "/css/hm_modules/hm_modals.css";		/* Modals/Pop-Ups */
+@import "/css/hm_modules/hm_notices.css";		/* Notices, Banners, Warnings */
+@import "/css/hm_modules/hm_sliders.css";		/* Sliders/Slideshows */
+@import "/css/hm_modules/hm_blog.css";			/* Blog Directory and Posts */
+@import "/css/hm_modules/hm_typography.css";	/* Text styling and Effects */
 
 
 /********************************************
@@ -50,9 +51,6 @@ GENERAL
 	/***** HTML/BODY *****/
 	/***** ========== *****/
 		html {
-			font-family: var(--font_sans);
-			text-rendering: auto;  /* override this in the main css file - test what works best */
-			-webkit-font-smoothing: antialiased;
 			font-size: 10px;
 		}
 		
@@ -61,17 +59,21 @@ GENERAL
 		}
 		
 		body {
-			padding: 0px;
+			/* Basic Layout */
 			width: 100%;
 			height: 100%;
+			overflow-x: hidden;
+
+			background-color: var(--white_1);
+
+			/* Typography */
+			font-family: var(--font_sans);
+			text-rendering: auto;  /* override this in the main css file - test what works best */
+			-webkit-font-smoothing: antialiased;
 			font-size: 1.6rem;
 			letter-spacing: .5px;
 			line-height: 1.35;
 			color: var(--black_1);
-			background-color: var(--white_1);
-			overflow-x: hidden;
-
-
 		}
 
 		body,
@@ -153,7 +155,7 @@ GENERAL
 	/***** =================== *****/
 		.grid_container {
 			display: grid;
-			grid-template-columns: calc() 1450px calc();
+			grid-template-columns: calc() 1150px calc();
 			grid-template-rows: repeat(3, 1fr);
 			gap: 0px 0px;
 			grid-template-areas:

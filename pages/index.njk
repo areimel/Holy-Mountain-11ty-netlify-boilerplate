@@ -42,7 +42,7 @@ eleventyNavigation:
 			<p class="copy">
 				The Holy Mountain Frontend Framework is built with Frontend Devs in mind.  It's meant to be an easy to use starting point for building sites, while providing you with a plethora of features and layouts that are commonly used.  It's also designed to easily sit on top of other, existing sites and frameworks, which can quickly bring old sites up to speed with modern standards and give you new tools to work with.
 				<br/><br/>
-				Holy Mountain's starter project, the thing you're looking at right now, is meant to be unopinionated and easy to customize.  Just like you, we hate clearing out a bunch of code that we don't want or need, so we try to keep things as clean and lightwieght as possible.  We're only using a handful of colors, the fonts are mostly generic (besides our personal favorite, Computerfont),  and the filler content we're using doubles as documentation.  It provides an easy reference to copy and paste code from
+				Holy Mountain's starter project, the thing you're looking at right now, is meant to be unopinionated and easy to customize.  Just like you, we hate clearing out a bunch of code that we don't want or need, so we try to keep things as clean and lightwieght as possible.  We're only using a handful of colors, the fonts are mostly generic (besides our personal favorite, Computerfont),  and the filler content we're using doubles as documentation.  It provides an easy reference to copy and paste code from.
 			</p>
 		</div>
 		
@@ -53,7 +53,7 @@ eleventyNavigation:
 						<ul class="-hm_custom_list">
 							<li>Responsive Code</li>
 							<li>CSS3 Variables</li>
-							<li>FlexBox</li>
+							<li>FlexBox-powered Layouts</li>
 							<li>CSS Grid Elements (coming soon)</li>
 						</ul>
 					</div>
@@ -62,7 +62,7 @@ eleventyNavigation:
 				<div class="cell_wrapper">
 					<div class="cell">
 						<ul class="-hm_custom_list">
-							<li>Reserved class namespace -hm</li>
+							<li>Reserved class namespace "-hm"</li>
 							<li>Easy-to-read code formatting</li>
 							<li>Emphasis on comments and documentation</li>
 							<li>Multiple role specific CSS and JS files</li>
@@ -74,8 +74,8 @@ eleventyNavigation:
 					<div class="cell">
 						<ul class="-hm_custom_list">
 							<li>Prebuilt elements</li>
-							<li>Emphasis on using classes, not tag names.</li>
-							<li>test</li>
+							<li>Emphasis on using descriptive classes, not tag names.</li>
+							<li>Minimal, vetted, 3rd party plugins</li>
 						</ul>
 					</div>
 				</div>
@@ -125,7 +125,7 @@ eleventyNavigation:
 		<div class="dynamic_size">
 			<div class="inner">
 				<h2 class="headline">
-					.-hm_layout_1
+					.-hm_layout_1 - Dynamic Side
 				</h2>
 				<p class="body">
 					This element is built on 3 main CSS concepts:
@@ -286,7 +286,7 @@ eleventyNavigation:
 					</div>
 					<div class="body">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Brings up a modal with a form in it.  Clone this modal out and edit the form however you need.
 						</p>
 					</div>
 					<div class="cta">
@@ -303,7 +303,7 @@ eleventyNavigation:
 					</div>
 					<div class="body">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							This modal is used to stop and warn a user before they follow a link off of your site.  It grabs the link's URL, adds it to the confirmation CTA in the modal, and stops the link's default behavior before the user leaves the page.  No extra code for this, just set the data-modal value to "offsite".
 						</p>
 					</div>
 					<div class="cta">
@@ -428,7 +428,7 @@ eleventyNavigation:
 				</h2>
 
 				<p>This is a basic form that can be copied and re-styled.  It is using 3 custom form elements, as well, which are alternative versions to common form elements to allow for far more styling options than their traditional versions. Right now, we have custom select boxes, radio buttons, and checkboxes. They're all built using FontAwesome to control the glyphs in the form elements.</p>
-				
+				<br/><br/>
 				{% include "forms/contact_custom_inputs.njk" %}
 
 			</div>
@@ -444,7 +444,7 @@ eleventyNavigation:
 <section id="" class="-hm_section_1">
 	<div class="-hm_layout_2">
 
-		<div class="headline container">
+		<div class="headline">
 			<h3>Menu - 3D Body Animations</h3>
 		</div>
 
@@ -480,7 +480,7 @@ eleventyNavigation:
 				<div class="cell">
 					<p class="headline">3D Body Animations</p>
 					<p class="body">
-						To apply this effect, simply add a data-attribute named 'data-body-transform' with a value of the animation you'd like to use.  The JS code is already set up to dynamically apply it.
+						To apply this effect, simply add a data-attribute named 'data-body-transform' to your control element, with a value of the animation you'd like to use.  The JS code is already set up to dynamically apply it.
 					</p>
 					<div class="cta">
 						<a class="-hm_button_1 nav_button" aria-label="body_transform_3" data-body-transform="body_transform_3">body_transform_3</a>

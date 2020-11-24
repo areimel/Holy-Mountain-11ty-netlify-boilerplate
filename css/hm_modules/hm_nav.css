@@ -41,11 +41,49 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 		.nav .nav_button{
 			cursor: pointer;
 			font-size: 3rem;
+			margin-left: 35px;
 		}
 
 /***** ==================  *****/
 /***** Desktop Header Nav  *****/
 /***** ==================  *****/
+	#nav_desktop{
+		--logo_wdith: 150px;
+	}
+
+	#nav_desktop .logo{
+		width: var(--logo_wdith);
+	}
+
+	/***** Links Section  *****/
+		#nav_desktop .links{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			width: calc(100% - var(--logo_wdith)) ;
+		}
+
+		/***** List Styling  *****/
+			#nav_desktop .links li{
+				display: inline-block;
+				padding: 0 15px;
+				border-right: solid 2px var(--black_1);
+			}
+			#nav_desktop .links li:last-of-type{
+				border-right: none;
+			}
+
+		/***** Link Styling  *****/
+			#nav_desktop .links a{
+				font-size: var(--font_l);
+				border-bottom: solid 2px transparent;
+				transition: var(--short_transition);
+			}
+			#nav_desktop .links a:hover{
+				border-bottom: solid 2px var(--black_1);
+			}
+
 
 /***** =======  *****/
 /***** Sidebar *****/

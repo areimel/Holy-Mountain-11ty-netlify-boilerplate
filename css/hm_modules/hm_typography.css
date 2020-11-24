@@ -1,0 +1,83 @@
+/********************************************
+
+HM MODULE - TYPOGRAPHY
+
+	Resources:
+		- https://css-tricks.com/snippets/css/using-font-face/
+		- https://css-tricks.com/almanac/properties/f/font-display/
+		- https://css-tricks.com/snippets/css/system-font-stack/
+********************************************/
+
+
+/***** ================= *****/
+/***** SYSTEM FONT STACK  *****/
+/***** ================= *****/
+
+	@font-face {
+		font-family: system;
+		font-style: normal;
+		font-weight: 300;
+		src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+	}
+
+	body {
+		font-family: "system";
+	}
+
+
+
+/***** ============= *****/
+/***** SPECIAL FONTS *****/
+/***** ============= *****/
+	
+	/***** Computerfont *****/
+	/* https://www.dafont.com/computerfont.font */
+	@font-face {
+		font-family: "Computerfont";
+		src: url("/css/fonts/Computerfont.ttf") format("ttf");
+		font-weight: 100;
+		font-display: fallback;
+	}
+	.computerfont{
+		font-family: "Computerfont";
+	}
+
+
+	/***** Label Maker *****/
+	/* https://www.dafont.com/impact-label.font */
+
+
+	/***** NASA *****/
+	/* https://www.dafont.com/nasalization.font */
+
+
+	/***** Old English *****/
+	/* https://www.dafont.com/old-london.font */
+
+
+	/***** Curly Script *****/
+	/* https://www.dafont.com/funkies.font */
+
+
+	/***** Hindi *****/
+	/* https://www.dafont.com/samarkan.font */
+
+	/***** Psychedelic *****/
+	/* https://www.dafont.com/jmh-psychedelic-caps.font */
+	/* https://www.dafont.com/oliver.font */
+
+
+/***** ============  *****/
+/***** TEXT EFFECTS *****/
+/***** ============  *****/
+
+	/* Gradient Text */
+
+
+	/* Knockout Text */
+
+
+	/* Text Shadows */
+
+
+	/* Neon Glow Text */

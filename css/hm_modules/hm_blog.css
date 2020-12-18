@@ -1,0 +1,32 @@
+/********************************************
+
+HM MODULE - BLOG
+
+contains: blog directory,blog previews, blog posts
+
+********************************************/
+
+
+	.blog_cell_wrapper{
+		padding: 35px 50px;
+	}
+
+	.-hm_blog_post_preview{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: var(--white_1);
+		box-shadow: var(--nice_shadow);
+		padding: 15px;
+	}
+
+	/***** Post Image *****/
+
+	/***** Post Title *****/
+
+	/***** Post Summary *****/
+
+	/***** Post Meta *****/
+
+	/***** Post Tags *****/

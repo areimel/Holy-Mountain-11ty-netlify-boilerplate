@@ -1,0 +1,103 @@
+/********************************************
+
+Variables File
+
+	Store all root variable code in this file.  
+ 	This includes:
+ 	- Fonts
+ 	- Colors
+ 	- Pre-made CSS values
+
+ WARNING: 	
+ 	CSS Variables are not supported by Internet Explorer.
+ 	Please check: https://caniuse.com/#feat=css-variables
+ 	Using CSS Variables means that a site ABSOLUTELY will not support IE.
+
+ SYNTAX:
+ 	Define:		$variable_name: value;
+ 	Use: 		color: var($variable_name);
+
+ NOTES:
+ 	Variables can be quickly implemented in a CSS file using Find/Replace
+
+********************************************/
+
+
+	/***** ========= *****/
+	/***** Standard  *****/
+	/***** ========= *****/
+
+	/***** Color Variables *****/
+		$black_1: 		green;
+		$white_1: 		#fafafa;
+		$grey_1:		#ececec;
+		$grey_2:		#3e3e3e;
+
+
+	/***** Font Size Variables *****/
+		$font_s: 		1.2rem;
+		$font_m: 		1.6rem;
+		$font_l: 		2.4rem;
+		$font_xl: 		4.5rem;
+
+	/***** Content Widths *****/
+		$content_width_s: 		650px;
+		$content_width_m: 		920px;
+		$content_width_l: 		1450px;
+
+	/***** Font Size Variables *****/
+		$font_monospace: 		'IBM Plex Mono', monospace;
+		$font_sans: 			'Source Sans Pro', sans-serif;
+		$font_display: 		'Special Elite', cursive; /* lofi typewriter */
+
+	/***** Transition Timing Variables *****/
+		$short_transition: 		.15s ease-in-out;
+		$medium_transition: 		.5s ease-in-out;
+		$long_transition: 		1s ease-in-out;
+
+
+	/***** Shadow Variables *****/
+		$nice_shadow:
+			0 2.8px 2.2px rgba(0, 0, 0, 0.02),0 6.7px 5.3px rgba(0, 0, 0, 0.028),0 12.5px 10px rgba(0, 0, 0, 0.035),0 22.3px 17.9px rgba(0, 0, 0, 0.042),0 41.8px 33.4px rgba(0, 0, 0, 0.05),0 100px 80px rgba(0, 0, 0, 0.07);
+
+
+
+	/***** ========  *****/
+	/***** Specials *****/
+	/***** ========  *****/
+
+		/***** NASA Colors *****/
+		/* https://nasa.github.io/nasawds-site/components/colors/#palette */
+			
+			/***** Primary *****/
+				$nasa-color-primary: 				#105bd8;	/* Blue */
+				$nasa-color-primary-darker: 		#0b3d91;	/* Darker Blue */
+				$nasa-color-primary-darkest: 		#105bd8;	/* Darkest Blue */
+				$nasa-color-primary-alt-light: 	#212121;	/* Black */
+				$nasa-color-gray-dark: 				#323a45;	/* Dark Grey */
+				$nasa-color-gray-light: 			#aeb0b5;	/* Light Grey */
+				$nasa-color-white: 					#ffffff;	/* White */
+
+			/***** Secondary *****/
+				$nasa-color-primary-alt: 				#02bfe7;	/* Blue */
+				$nasa-color-primary-alt-darkest: 		#046b99;	/* Darkest Blue */
+				$nasa-color-primary-alt-dark:			#00a6d2;	/* Darker Blue */
+				$nasa-color-primary-alt-light: 		#9bdaf1;	/* Light Blue */
+				$nasa-color-primary-alt-lightest: 	#e1f3f8;	/* Lightest Blue */
+
+				$nasa-color-secondary: 				#dd361c;	/* Red */
+				$nasa-color-secondary-darkest: 	#99231b;	/* Darkest Red */
+				$nasa-color-secondary-dark:		#c62d1f;	/* Darker Red */
+				$nasa-color-secondary-light: 		#e59892;	/* Light Red */
+				$nasa-color-secondary-lightest: 	#f9e0de;	/* Lightest Red */
+
+			/***** Background *****/
+				$nasa-color-secondary: 				#dd361c;	/* Red */
+				$nasa-color-secondary-darkest: 	#99231b;	/* Darkest Red */
+				$nasa-color-secondary-dark:		#c62d1f;	/* Darker Red */
+				$nasa-color-secondary-light: 		#e59892;	/* Light Red */
+				$nasa-color-secondary-lightest: 	#f9e0de;	/* Lightest Red */
+
+			/***** Tertiary *****/
+						
+	

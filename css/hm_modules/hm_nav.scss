@@ -18,7 +18,7 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 
 	/***** Nav class *****/		
 		.nav{
-			background-color: var(--white_1);
+			background-color: $white_1;
 		}
 		.nav>.container{
 			display: flex;
@@ -48,11 +48,11 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 /***** Desktop Header Nav  *****/
 /***** ==================  *****/
 	#nav_desktop{
-		--logo_wdith: 150px;
+		$logo_wdith: 150px;
 	}
 
 	#nav_desktop .logo{
-		width: var(--logo_wdith);
+		width: $logo_wdith;
 	}
 
 	/***** Links Section  *****/
@@ -61,14 +61,14 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 			flex-direction: row;
 			align-items: center;
 			justify-content: flex-end;
-			width: calc(100% - var(--logo_wdith)) ;
+			width: calc(100% - $logo_wdith);
 		}
 
 		/***** List Styling  *****/
 			#nav_desktop .links li{
 				display: inline-block;
 				padding: 0 15px;
-				border-right: solid 2px var(--black_1);
+				border-right: solid 2px $black_1;
 			}
 			#nav_desktop .links li:last-of-type{
 				border-right: none;
@@ -76,12 +76,12 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 
 		/***** Link Styling  *****/
 			#nav_desktop .links a{
-				font-size: var(--font_l);
+				font-size: $font_l;
 				border-bottom: solid 2px transparent;
-				transition: var(--short_transition);
+				transition: $short_transition;
 			}
 			#nav_desktop .links a:hover{
-				border-bottom: solid 2px var(--black_1);
+				border-bottom: solid 2px $black_1;
 			}
 
 
@@ -111,7 +111,7 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 		height: 100%;
 		padding-bottom: 100px;
 		transform: translate3d(300px,0px,0px);
-		background-color: var(--white_1);
+		background-color: $white_1;
 		transition: .5s ease-in-out;
 	}
 	#nav_sidebar.active{
@@ -188,7 +188,7 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 /***** Footer *****/	
 /***** ====== *****/		
 	#footer {
-		background-color: var(--white_1);
+		background-color: $white_1;
 	}
 	#footer>.container{
 		display: flex;

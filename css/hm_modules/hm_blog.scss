@@ -16,8 +16,8 @@ contains: blog directory,blog previews, blog posts
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		background-color: var(--white_1);
-		box-shadow: var(--nice_shadow);
+		background-color: $white_1;
+		box-shadow: $nice_shadow;
 		padding: 15px;
 	}
 

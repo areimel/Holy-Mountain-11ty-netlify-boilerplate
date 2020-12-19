@@ -65,16 +65,16 @@ GENERAL
 			height: 100%;
 			overflow-x: hidden;
 
-			background-color: var(--white_1);
+			background-color: $white_1;
 
 			/* Typography */
-			font-family: var(--font_sans);
+			font-family: $font_sans;
 			text-rendering: auto;  /* override this in the main css file - test what works best */
 			-webkit-font-smoothing: antialiased;
 			font-size: 1.6rem;
 			letter-spacing: .5px;
 			line-height: 1.35;
-			color: var(--black_1);
+			color: $black_1;
 		}
 
 		body,
@@ -190,10 +190,10 @@ GENERAL
 	/***** =========== *****/
 		code{
 			display: block;
-			background-color: var(--black_1);
-			color:var(--white_1);
-			font-family: var(--font_monospace);
-			font-size: var(--font_s);
+			background-color: $black_1;
+			color:$white_1;
+			font-family: $font_monospace;
+			font-size: $font_s;
 			padding: 10px;
 			margin: 10px 0;
 		}
@@ -219,13 +219,13 @@ NOTES:
 		overflow:hidden; 
 		top:0; 
 		left:0;
-		background-color: var(--white_1);
+		background-color: $white_1;
 		z-index: 1000000;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		transition: var(--medium_transition);
+		transition: $medium_transition;
 		transition-delay: 0.5s display;
 	}
 	#loading_screen.loading_complete{
@@ -240,8 +240,8 @@ NOTES:
 		height: auto;
 	}
 	#loading_screen > i{
-		font-size: var(--font_xl);
-		color: var(--black_1);
+		font-size: $font_xl;
+		color: $black_1;
 	}
 
 
@@ -253,7 +253,7 @@ BODY WRAPPER
 	
 	#body_wrapper{
 		z-index: 100;
-		background-color: var(--white_1);
+		background-color: $white_1;
 		transition:.5s ease-in-out;
 		transform-origin: center;
 		perspective-origin: center;
@@ -323,22 +323,22 @@ Contents:
 					background-color: rgba(26, 26, 26,.75);
 					display: inline-block;
 					text-align: center;
-					box-shadow:  var(--nice_shadow);
+					box-shadow:  $nice_shadow;
 
 					max-width: 800px;
 				}
 				.-hm_hero_1 .copy>.headline{
-					color: var(--white_1);
+					color: $white_1;
 					font-size: 8.5rem;
 					margin-bottom:  -15px;
 				}
 				.-hm_hero_1 .copy>.subhead{
-					color: var(--white_1);
+					color: $white_1;
 					font-size: 3.6rem;
 					margin-bottom: 35px;
 				}
 				.-hm_hero_1 .copy>.body{
-					color: var(--white_1);
+					color: $white_1;
 					font-size: 1.8rem;
 					text-align: justify;
 				}
@@ -373,7 +373,7 @@ Contents:
 
 			/***** static size: this class styles the div with a fixed pixel size  *****/
 				.-hm_layout_1>.static_size{
-					width: var(--static_width); /* sets the static size */
+					width: $static_width); /* sets the static size /
 					
 					padding: 100px 35px;
 					display: flex;
@@ -419,7 +419,7 @@ Contents:
 
 			/***** dynamic size: this class styles the div that fills the remaining space  *****/
 				.-hm_layout_1>.dynamic_size{
-					width: calc(100% - var(--static_width)); /* sets the dynamic size */
+					width: calc(100% - $static_width); /* sets the dynamic size /
 
 					padding: 100px 35px;
 					display: flex;
@@ -469,7 +469,7 @@ Contents:
 					margin-bottom: 15px;
 				}
 				.-hm_layout_2>.headline>h3{
-					font-size: var(--font_xl);
+					font-size: $font_xl;
 					font-weight: 600;
 					display:inline-block;
 				}
@@ -486,7 +486,7 @@ Contents:
 
 			/***** Content Cells *****/
 				.-hm_layout_2>.content>.cell_wrapper{
-					width: calc(100% / var(--columns));
+					width: calc(100% / $columns);
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -503,7 +503,7 @@ Contents:
 
 
 				.-hm_layout_2>.content>.cell_wrapper>.cell{
-					background-color: var(--grey_1);
+					background-color: $grey_1;
 					padding: 15px 15px 100px 15px; /* extra 100px on bottom is to create safe zone for CTA */
 					display: flex;
 					flex-direction: column;
@@ -553,7 +553,7 @@ Contents:
 					margin-bottom: 15px;
 				}
 				.-hm_template_3>.headline>h3{
-					font-size: var(--font_xl);
+					font-size: $font_xl;
 					font-weight: 600;
 					display:inline-block;
 				}
@@ -583,7 +583,7 @@ Contents:
 				align-items: center;
 				justify-content: flex-start;
 				height: 100%;
-				box-shadow: 0 8px 6px -6px var(--black_1);
+				box-shadow: 0 8px 6px -6px $black_1;
 				position: relative;
 			}
 
@@ -625,7 +625,7 @@ Contents:
 					margin-bottom: 15px;
 				}
 				.-hm_template_4>.headline>h3{
-					font-size: var(--font_xl);
+					font-size: $font_xl;
 					font-weight: 600;
 					display:inline-block;
 				}
@@ -667,7 +667,7 @@ Contents:
 					margin-bottom: 15px;
 				}
 				.-hm_template_5>.headline>h3{
-					font-size: var(--font_xl);
+					font-size: $font_xl;
 					font-weight: 600;
 					display:inline-block;
 				}
@@ -763,7 +763,7 @@ Contents:
 					margin-bottom: 15px;
 				}
 				.-hm_template_6 .headline>h3{
-					font-size: var(--font_xl);
+					font-size: $font_xl;
 					font-weight: 600;
 					display:inline-block;
 				}
@@ -787,7 +787,7 @@ Contents:
 
 			/***** Cells *****/
 				.-hm_template_7>.cell_wrapper{
-					width: var(--cell_width);
+					width: $cell_width;
 					display: flex;
 					justify-content: center;
 					padding: 15px;
@@ -797,7 +797,7 @@ Contents:
 					height: 100%;
 					width: 100%;
 					padding:15px;
-					background-color: var(--grey_1);
+					background-color: $grey_1;
 				}
 
 
@@ -831,7 +831,7 @@ Contents:
 			.-hm_content_1{}
 			
 			.-hm_content_1 .heading{
-				font-size: var(--font_xl);	
+				font-size: $font_xl)	
 				display: inline-block;
 				margin-bottom: 15px;
 			}
@@ -864,7 +864,7 @@ search key: --buttons
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
-			transition: var(--short_transition);
+			transition: $short_transition;
 		}
 		.-hm_button_1:hover {
 			background-color: #999;
@@ -877,7 +877,7 @@ search key: --buttons
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
-			transition: var(--short_transition);
+			transition: $short_transition;
 		}
 		.-hm_button_2:hover {
 			background-color: #999;
@@ -892,12 +892,12 @@ search key: --buttons
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
-			transition: var(--short_transition);
+			transition: $short_transition;
 		}
 		.-hm_button_3 i{
 			font-size: .8em;
 			padding-left: 5px;
-			transition: var(--short_transition);
+			transition: $short_transition;
 		}
 		.-hm_button_3:hover{
 			text-decoration: underline;
@@ -908,15 +908,15 @@ search key: --buttons
 
 	/***** Button 4 - Border Change *****/
 		.-hm_button_4 {
-			border: solid 3px var(--grey_2);
-			background-color: var(--white_1);
+			border: solid 3px $grey_2;
+			background-color: $white_1;
 			display: inline-block;
 			padding: 5px 15px;
 			cursor: pointer;
-			transition: var(--short_transition);
+			transition: $short_transition;
 		}
 		.-hm_button_4:hover {
-			border-color: var(--black_1);
+			border-color: $black_1;
 		}
 
 
@@ -934,7 +934,7 @@ search key: --tooltips
 		line-height: 0.9em;
 		cursor: pointer;
 		position: relative;
-		transition: var(--short_transition);
+		transition: $short_transition;
 		z-index: 5;
 	}
 	[data-tooltip]:before {
@@ -955,10 +955,10 @@ search key: --tooltips
 		font-size: 1.4rem;
 		line-height: 1.6rem;
 		z-index: 4;
-		transition: var(--short_transition);
+		transition: $short_transition;
 	}
 	[data-tooltip]:hover {
-		background-color: var(--orange);
+		background-color: $orange;
 	}
 	[data-tooltip]:hover:before {
 		opacity: 1;

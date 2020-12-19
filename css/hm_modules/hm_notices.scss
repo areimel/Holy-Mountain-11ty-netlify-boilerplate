@@ -32,7 +32,7 @@ search key: --notices
 		max-width: 900px;
 	}
 	#cookie_notice>.container>.copy{
-		color: var(--white_1);
+		color: $white_1;
 		width: calc(100% - 150px);
 		display: flex;
 		flex-direction: column;
@@ -49,13 +49,13 @@ search key: --notices
 	}
 
 	#cookie_notice>.container>.interaction{
-		color: var(--white_1);
+		color: $white_1;
 		width: 150px;
 	}
 	#cookie_notice>.container>.interaction>.close{
 		padding: 15px;
 		font-size: 2.4rem;
-		color: var(--white_1);
+		color: $white_1;
 		background-color: transparent;
 		display: flex;
 		justify-content: space-around;

@@ -22,6 +22,13 @@ NOTES
 		on desktop and mobile
 ********************************************/
 
+	/***** General *****/
+		[data-flex]{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 	/***** Rows *****/
 		[data-flex="row"]{
 			flex-direction: row;

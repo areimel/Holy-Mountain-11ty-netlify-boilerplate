@@ -76,7 +76,7 @@ contains: desktop nav, sidebar nav, mobile nav, footer, subfooter
 
 		/***** Link Styling  *****/
 			#nav_desktop .links a{
-				font-size: var(--font_l);
+				font-size: var(--font_m);
 				border-bottom: solid 2px transparent;
 				transition: var(--short_transition);
 			}

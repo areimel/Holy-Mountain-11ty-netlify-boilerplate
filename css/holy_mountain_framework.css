@@ -137,7 +137,16 @@ GENERAL
 			justify-content: flex-start;
 		}
 
-
+	/***** ==================  *****/
+	/***** Custom List Styling *****/
+	/***** ==================  *****/
+		.-hm_custom_list>li:before{
+			/* Set custom list icons: https://fontawesome.com/cheatsheet; */
+			content: '\f0da';
+			padding-right: 10px;
+			top: 0px;
+			left: -15px;
+		}
 
 	/***** ========== *****/
 	/***** CONTAINER  *****/

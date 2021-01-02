@@ -60,22 +60,9 @@ BASIC FRAMEWORK OVERRIDES
 	/***** Container Width *****/
 	/***** =============== *****/
 		.container{
-			/* Set custom container width */
+			/* Override template value*/
 			max-width: 1450px;
 		}
-
-
-	/***** ==================  *****/
-	/***** Custom List Styling *****/
-	/***** ==================  *****/
-		.-hm_custom_list>li:before{
-			/* Set custom list icons */
-			content: '\f0da';
-			padding-right: 10px;
-			top: 0px;
-			left: -15px;
-		}
-
 
 
 
